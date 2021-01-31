@@ -30,6 +30,18 @@ textarea {
   border-radius: 15px;
 }
 
+/* #day-row {
+  display: flex;
+  border-top: 2px solid black;
+
+
+} */
+
+/* .tasks {
+  background-color: gray;
+  border: 1px solid black;
+} */
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -38,6 +50,9 @@ textarea {
 }
 
 .hour {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
@@ -71,7 +86,7 @@ textarea {
   transition: all .3s ease-in-out;
 }
 
-div.col-2.hourname {
+/* div.col-2.hourname {
   display: flex;
   justify-items: right;
   align-items: flex-start;
@@ -86,4 +101,28 @@ div.col-2.addtask {
 
 .addtask {
   background-color: #06AED5;
+} */
+
+/* This will be applied on any screen 768px and bellow */
+@media screen and (max-width: 768px),
+screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .hour {
+    padding-right: 17%;
+  }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
 }
