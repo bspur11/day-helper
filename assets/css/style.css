@@ -25,22 +25,15 @@ textarea {
   white-space: pre-wrap;
 }
 
+.clock {
+  display: flex;
+  justify-content: end;
+}
+
 .time-block {
   text-align: center;
   border-radius: 15px;
 }
-
-/* #day-row {
-  display: flex;
-  border-top: 2px solid black;
-
-
-} */
-
-/* .tasks {
-  background-color: gray;
-  border: 1px solid black;
-} */
 
 .row {
   white-space: pre-wrap;
@@ -86,22 +79,7 @@ textarea {
   transition: all .3s ease-in-out;
 }
 
-/* div.col-2.hourname {
-  display: flex;
-  justify-items: right;
-  align-items: flex-start;
-}
 
-
-div.col-2.addtask {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.addtask {
-  background-color: #06AED5;
-} */
 
 /* This will be applied on any screen 768px and bellow */
 @media screen and (max-width: 768px),
