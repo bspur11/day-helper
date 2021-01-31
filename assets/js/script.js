@@ -1,15 +1,26 @@
+// set the time and date at the top
+
 $(function () {
   let date = moment();
   var dateToday = $("#currentDay");
   dateToday.text(date.format('dddd MMMM Do YYYY'));
-  let nowTime = $('#timeNow');
+
+  function update() {
+    $('#clock').html(moment().format('hh:mm:a'));
+  }
+
+  setInterval(update, 1000);
+  let nowTime = $('#clock');
   nowTime.text(date.format('hh mm a'));
 
+  // ready function to start on load
 
   $(document).ready(function () {
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
       // Get nearby values of the description in JQuery
+      // description is textArea
+      // and gets the id of the parent
       var text = $(this).siblings(".description").val();
       var time = $(this).parent().attr("id");
 
