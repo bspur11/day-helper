@@ -228,12 +228,12 @@ $("#save-delete17").on("click", "i.fa-save", function () {
 
 
 // This function runs but the time is never refreshed?
-setInterval(function () {
-    $(".event-group .events").each(function (index, el) {
-        auditTime(el);
-        //console.log(currentTime);
-    });
+// setInterval(function () {
+//     $(".event-group .events").each(function (index, el) {
+//         auditTime(el);
+//         //console.log(currentTime);
+//     });
 
-}, (1000 * 60)); // 1000ms x 60 = 1 minute x 30 = 30 minutes
+// }, (1000 * 60)); // 1000ms x 60 = 1 minute x 30 = 30 minutes
 
 auditTime();
