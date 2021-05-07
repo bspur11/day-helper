@@ -4,7 +4,8 @@ Week 5: Third-Party API's Challenge
 
 ## Description
 
-This site was designed to enhance my skills using 3rd party API's. This project used BootStrap and jQuery as well as moment.js to create a Work Day Scheduler.
+This site was designed using Module 5's 3rd party API's. This project is a day scheduler for one's workday and runs from 9 to 5.
+It uses local storage to store the inputs using the save icon and then delete those inputs using the delete (trashcan) icon. 
 
 ![Screenshot 2021-05-06 201942](https://user-images.githubusercontent.com/63411329/117380783-88ee7600-aea8-11eb-8b97-d5c809a19ecf.png)
 
